@@ -63,7 +63,7 @@ html, body {
 
 }
 
-.result h2 {
+.result h1, .result h2 {
     font-size: 1.5rem;
     color:hsl(241, 100%, 89%);
 }
@@ -186,4 +186,11 @@ html, body {
 
 .continue-button:hover {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
