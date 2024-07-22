@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.result-card {
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 33vw;
+}
+
+@media (max-width:1440px) {
+    .result-card {
+        width: 50vw;
+    }
+}
+
+@media (max-width:1024px) {
+    .result-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .result-card {
+        flex-direction: column;
+        width: 100vw;
+    }
+}
+
+.result {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+
+.result h2 {
+    font-size: 1.5rem;
+    color:hsl(241, 100%, 89%);
+}
+
+.result .score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+.score-number {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.score-of {
+    font-size: 1rem;
+    color:hsl(241, 100%, 89%);
+}
+
+.result-text {
+    text-align: center;
+}
+
+.result-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.result-text p {
+    font-size: 1rem;
+    color:hsl(241, 100%, 89%);
+}
+
+.summary {
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: hsl(224, 30%, 27%);
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: .6rem .5rem;
+
+}
+
+.summary-item .score {
+    color: hsl(241, 100%, 89%);
+}
+
+.summary-item .score strong {
+    color: hsl(224, 30%, 27%);
+}
+
+.reaction {
+    background: hsla(0, 100%, 67%, .1);
+    border-radius: 5px;
+}
+
+.reaction .label {
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background: hsla(39, 100%, 56%, .1);
+    border-radius: 5px;
+}
+
+.memory .label {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background: hsla(166, 100%, 37%, .1);
+    border-radius: 5px;
+}
+
+.verbal .label {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background: hsla(234, 85%, 45%, .1);
+    border-radius: 5px;
+}
+
+.visual .label {
+    color: hsl(234, 85%, 45%);
+}
+
+.continue-button {
+    align-self: center;
+    width: 100%;
+    margin-top: auto;
+    padding: 10px 20px;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.continue-button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
