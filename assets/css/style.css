@@ -63,7 +63,7 @@ html, body {
 
 }
 
-.result h1, .result h2 {
+.result h1 {
     font-size: 1.5rem;
     color:hsl(241, 100%, 89%);
 }
@@ -96,7 +96,7 @@ html, body {
     text-align: center;
 }
 
-.result-text h3 {
+.result-text h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
